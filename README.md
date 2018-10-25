@@ -1,3 +1,6 @@
+#This is a fork from [here] (https://github.com/sanvva/ALLHiC).
+
+
 # ALLHiC
 A package to scaffolding polyploidy or heterozygosis genome using Hi-C data 
 
