@@ -1,6 +1,6 @@
 #!/usr/bin/perl -w
 
-die "Usage: perl $0 file.bam out.sam\n" if(!defined($ARGV[0]) or !defined($ARGV[1]) or !defined($ARGV[2]));
+die "Usage: perl $0 file.bam out.sam deaft_assembly.fai \n" if(!defined($ARGV[0]) or !defined($ARGV[1]) or !defined($ARGV[2]));
 open(OUT, " | samtools view -bt $ARGV[2] - > $ARGV[1]") or die"";
 my ($NM,$XM,$XO,$XG) = 0;
 open(IN, "samtools view $ARGV[0] |") or die"";
