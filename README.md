@@ -4,26 +4,31 @@
 ###I can take no responsibility for the action of this software, nor can I provide support.
 
 # ALLHiC
-A package to scaffolding polyploidy or heterozygosis genome using Hi-C data 
+A package to scaffold polyploid or heterozygous genome assemblies using Hi-C data.
 
 
 ### Introduction  
-The major problem of scaffolding polyploid genome is that Hi-C signals are frequently detected between allelic haplotypes and any existing stat of art Hi-C scaffolding program  links the allelic haplotypes together. To solve the problem, we developed a new Hi-C scaffolding pipeline, called ALLHIC, specifically tailored to the highly heterozygous diploids or polyploid genomes. ALLHIC pipeline contains a total of 4 steps: prune, partition, optimize and build. 
+The major problem of scaffolding polyploid genomes is that Hi-C signals are frequently detected between allelic haplotypes and any existing state of art Hi-C scaffolding program links the allelic haplotypes together. To solve the problem, we developed a new Hi-C scaffolding pipeline, called ALLHIC, specifically tailored to the highly heterozygous diploid or polyploid genomes. ALLHIC pipeline contains a total of 4 steps: prune, partition, optimize and build. 
 
 
-### Installation
+### Installation (contains a dead/private link)
     $ git clone https://github.com/tangerzhang/ALLHiC
+### If preffered use either:
+    $ git clone https://github.com/sanvva/ALLHiC
+### or
+    $ git clone https://github.com/kfletcher88/ALLHiC/
+### then
     $ cd ALLHiC
     $ chmod +x bin/*
     $ cp bin/* ~/bin
 
 ### Dependencies
 Following is a list of thirty-party programs that will be used in ALLHIC pipeline.   
-- [samtools](http://samtools.sourceforge.net/)
+- [samtools](http://samtools.sourceforge.net/) v0.1.19 required for LACHESIS
 - [bedtools](http://bedtools.readthedocs.io/en/latest/)
 - [bwa](http://bio-bwa.sourceforge.net/)
 - [LACHESIS](https://github.com/shendurelab/LACHESIS)
-- NCBI blast+
+- [NCBI blast+](ftp://ftp.ncbi.nlm.nih.gov/blast/executables/blast+/LATEST/)
 
 ### Running the pipeline
 
