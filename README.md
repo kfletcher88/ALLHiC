@@ -62,8 +62,7 @@ bwa sampe draft.asm.fasta sample_R1.sai sample_R2.sai reads_R1.fastq.gz reads_R2
 > Filtering SAM file 
 ```
 PreprocessSAMs.pl sample.bwa_aln.bam draft.asm.fasta MBOI
-perl ~/software/script/filterBAM_forHiC.pl sample.bwa_aln.REduced.paired_only.bam sample.clean.sam  
-samtools view -bt draft.asm.fasta.fai sample.clean.sam > sample.clean.bam  
+perl ~/software/script/filterBAM_forHiC.pl sample.bwa_aln.REduced.paired_only.bam sample.clean.bam draft.asm.fasta.fai 
 ```
 
 - **Prune**  
