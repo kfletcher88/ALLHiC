@@ -57,11 +57,11 @@ samtools faidx draft.asm.fasta
 ```
 bwa aln -t 24 draft.asm.fasta reads_R1.fastq.gz > sample_R1.sai  
 bwa aln -t 24 draft.asm.fasta reads_R2.fastq.gz > sample_R2.sai  
-bwa sampe draft.asm.fasta sample_R1.sai sample_R2.sai reads_R1.fastq.gz reads_R2.fastq.gz > sample.bwa_aln.sam  
+bwa sampe draft.asm.fasta sample_R1.sai sample_R2.sai reads_R1.fastq.gz reads_R2.fastq.gz | samtools view -bS - > sample.bwa_aln.bam  
 ```
 > Filtering SAM file 
 ```
-PreprocessSAMs.pl sample.bwa_aln.sam draft.asm.fasta MBOI
+PreprocessSAMs.pl sample.bwa_aln.bam draft.asm.fasta MBOI
 perl ~/software/script/filterBAM_forHiC.pl sample.bwa_aln.REduced.paired_only.bam sample.clean.sam  
 samtools view -bt draft.asm.fasta.fai sample.clean.sam > sample.clean.bam  
 ```
