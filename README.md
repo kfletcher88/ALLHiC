@@ -1,4 +1,4 @@
-# This is a fork from [here] (https://github.com/sanvva/ALLHiC).
+# This is a fork from [here](https://github.com/sanvva/ALLHiC).
 
 ### Please refer to the original fork should I break anything.
 
