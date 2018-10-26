@@ -1,6 +1,9 @@
 #This is a fork from [here] (https://github.com/sanvva/ALLHiC).
+
 ###Please refer to the original fork should I break anything.
+
 ###This is the most recent version of the software I could find, related to this [paper](https://www.nature.com/articles/s41588-018-0237-2). I am not certain if it is the version used in the paper.
+
 ###I can take no responsibility for the action of this software, nor can I provide support.
 
 # ALLHiC
