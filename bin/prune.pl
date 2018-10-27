@@ -116,7 +116,7 @@ while(<IN>){
 	}
 close IN;
 close OUT2;
-system("remove_reads.pl");
+system("remove_reads.pl $bamfile");
 ### Reading removed reads
 #my %removedb = ();
 #open(IN, "removedb_Allele.txt") or die"";

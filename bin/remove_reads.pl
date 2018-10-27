@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 my %bamdb  = ();
-open(IN, "bam.list") or die"";
+open(IN, $ARGV[0]) or die"";
 while(<IN>){
         chomp;
         my $bam = $_;
